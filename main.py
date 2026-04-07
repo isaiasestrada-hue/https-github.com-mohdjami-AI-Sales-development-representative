@@ -465,7 +465,8 @@ def show_prospect(prospect_id):
         console.print(Panel(p.trigger_events, title="Trigger Events", border_style="dim"))
 
     if activities:
-        act_table = Table(title="Activity History", box=box.SIMPLE)
+        act_table = Table(title="Activity History", box=box.SIMPLE,
+                          show_header=True, header_style="bold cyan")
         act_table.add_column("Date", style="dim", min_width=19)
         act_table.add_column("Type", min_width=22)
         act_table.add_column("Subject", min_width=30)
