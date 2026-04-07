@@ -37,3 +37,13 @@ from services.llm_service import LLMService
 from services.email_discovery_service import EmailDiscoveryService
 from services.scraper_router_service import ScraperRouterService
 from services.follow_up_sequence_service import FollowUpSequenceService
+
+
+# Configure logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+
+PLACEHOLDER_CONTENT
